@@ -20,6 +20,7 @@
     "rules": {
         "no-use-before-define": 0,
         "react/prop-types": ["error", {"ignore": ["navigation"] }],
-        "no-console": ["error", { "allow": ["log", "warn", "error"] }]
+        "no-console": ["error", { "allow": ["log", "warn", "error"] }],
+        "import/prefer-default-export": 0
     }
 }

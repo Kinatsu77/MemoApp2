@@ -21,6 +21,7 @@ export default function MemoListScreen(props) {
     let unsubscribe = () => {};
     if (currentUser) {
       const ref = db.collection(`users/${currentUser.uid}/memos`).orderBy('updatedAt', 'desc');
+      // onSnapshotはデータの監視
       unsubscribe = ref.onSnapshot((snapshot) => {
         const userMemos = [];
         snapshot.forEach((doc) => {

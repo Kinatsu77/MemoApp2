@@ -9,7 +9,6 @@ import MemoList from '../components/MemoList';
 import LogOutButton from '../components/LogOutButton';
 import Button from '../components/Button';
 import Loading from '../components/Loading';
-import { set } from 'timm';
 
 export default function MemoListScreen(props) {
   const { navigation } = props;
